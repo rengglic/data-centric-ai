@@ -38,14 +38,14 @@ If you'd like to make contributions to this Github repository, please read our [
 4. [The End of Modelitis](#end_modelitis)
 5. [Fine-Grained Evaluation](#evaluation)
 6. [Robustness](#robustness)
-7. [Data Cleaning](#cleaning) (Under construction)
+7. [Data Cleaning](#cleaning)
 8. [MLOps](#mlops)
-8. [Data Privacy](#privacy) (Under construction)
-8. [Data Flow](#dataflow) (Under construction)
-8. [Multi-Task & Multi-Domain Learning](#mtl-mdl) (Under construction)
-9. [Emerging Trends](#emerging)
-10. [Applications](#applications)
-11. [Awesome Lists](awesome-lists/README.md)
+9. [Data Privacy](#privacy) (Under construction)
+10. [Data Flow](#dataflow) (Under construction)
+11. [Multi-Task & Multi-Domain Learning](#mtl-mdl) (Under construction)
+12. [Emerging Trends](#emerging)
+13. [Applications](#applications)
+14. [Awesome Lists](awesome-lists/README.md)
 
 <h1 id="data-programming">Data Programming & Weak Supervision</h1>
 
@@ -117,7 +117,7 @@ Both Group DRO and GEORGE introduced approaches to handle subpopulation shift un
 
 Beyond subpopulation shift, robustness also features domain shift and adversarial perturbations. Under domain shift, we model test-time data as coming from a completely different domain from the training data. Under distribution shift with adversarial perturbations, test-time data may exhibit corruptions or imperceptible differences in input feature space that prevent trained ERM models from strongly generalizing to the test-time distributions. _These important sections are are still stubs. Please add your contributions!_
 
-<h1 id="cleaning">Data Cleaning  (Under Construction)</h1>
+<h1 id="cleaning">Data Cleaning</h1>
 
 [Data Cleaning Area Page](data-cleaning.md)
 
@@ -191,3 +191,4 @@ The following individuals and organizations have contributed to the development 
 - [Jared Dunnmon](https://jdunnmon.github.io) from the Defense Innovation Unit edited multiple sections
 - Alvin Ming and [Sharon Li](http://pages.cs.wisc.edu/~sharonli/) from U-Wisconsin contributed work in outlier detection
 - [Ce Zhang](https://scholar.google.ch/citations?user=GkXqbmMAAAAJ&hl=en) from ETH-Zurich added discussion for data cleaning and MLOps
+- [Eugene Wu](http://www.cs.columbia.edu/~ewu/) from Columbia added discussion for data cleaning
