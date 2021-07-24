@@ -12,7 +12,8 @@ models into production is that the data often matters more. The goal of this rep
 is to consolidate this experience in a single place that can be accessed by anyone who
 wants to understand and contribute to this area.
 
-_We're only at the beginning, and you can help by contributing to this GitHub!_
+_We're only at the beginning, and you can help by contributing to this GitHub! [Thanks to all those who have
+contributed so far.](THANKS.md)_
 
 ## How Can I Help?
 
@@ -40,12 +41,13 @@ If you'd like to make contributions to this Github repository, please read our [
 6. [Robustness](#robustness)
 7. [Data Cleaning](#cleaning)
 8. [MLOps](#mlops)
-9. [Data Privacy](#privacy) (Under construction)
-10. [Data Flow](#dataflow) (Under construction)
-11. [Multi-Task & Multi-Domain Learning](#mtl-mdl) (Under construction)
-12. [Emerging Trends](#emerging)
-13. [Applications](#applications)
-14. [Awesome Lists](awesome-lists/README.md)
+9. [Data Selection](#selection) (Under construction)
+10. [Data Privacy](#privacy) (Under construction)
+11. [Data Flow](#dataflow) (Under construction)
+12. [Multi-Task & Multi-Domain Learning](#mtl-mdl) (Under construction)
+13. [Emerging Trends](#emerging)
+14. [Applications](#applications)
+15. [Awesome Lists](awesome-lists/README.md)
 
 <h1 id="data-programming">Data Programming & Weak Supervision</h1>
 
@@ -133,6 +135,12 @@ This is a complex process in which human engineers could make mistakes, require 
 
 Researchers have started tackling these challenges by developing new techniques and building systems such as [TFX](https://arxiv.org/pdf/2010.02013.pdf), [Ease.ML](http://cidrdb.org/cidr2021/papers/cidr2021_paper26.pdf) or [Overton](https://www.cs.stanford.edu/~chrismre/papers/overton-tr.pdf) designed to handle the entire lifecycle of a machine learning model both during development and in production. These systems typically consist of distinct components in charge of handling specific stages (e.g., pre- or post-training) or aspects (e.g., monitoring or debugging) of MLOps.
 
+<h1 id="selection">Data Selection  (Under Construction)</h1>
+
+[Data Selection Area Page](data-selection.md)
+
+_This area is a stub, you can help by improving it._
+
 <h1 id="privacy">Data Privacy  (Under Construction)</h1>
 
 [Data Privacy Area Page](data-privacy.md)
@@ -164,31 +172,3 @@ Data-centric AI is still growing, and we want to capture emerging trends as they
 [Applications Area Page](applications.md)
 
 Data-centric approaches have had a wide-ranging impact wherever machine learning is used and deployed, whether in academia, industry or other organizations. Impact spans modalities such as structured data, text, images, videos, graphs and others, while areas include text and image processing, medical imaging, computational biology, autonomous driving, etc.
-
-
-# Contributors
-
-This GitHub is maintained by [Karan Goel](https://krandiash.github.io) and [Laurel Orr](https://cs.stanford.edu/people/lorr1/) from [Hazy Research](https://hazyresearch.stanford.edu). Reach out to kgoel [at] cs [dot] stanford [dot] edu for questions, comments and feedback.
-
-
-The following individuals and organizations have contributed to the development of this GitHub so far,
-- [Kabir Goel](https://kabirgoel.com) created the header artwork.
-- Members of [Hazy Research](https://hazyresearch.stanford.edu) created the first version of this resource,
-    - [Michael Zhang](https://michaelzhang.xyz) (Robustness)
-    - [Mayee Chen](https://mayeechen.github.io) (Data Programming, Weak Supervision)
-    - [Maya Varma](https://maya-varma.com) (Computational Biology)
-    - [Sabri Eyuboglu](https://seyuboglu.com) (Computational Biology, Interactive ML)
-    - [Megan Lesczynski](http://www.mleszczy.com/) (Named Entity Linking)
-    - Avanika Narayan (Benchmarking)
-    - [Dan Fu](http://www.danfu.org/) (Contrastive Learning)
-    - [Arjun Desai](https://scholar.google.com/citations?user=0tusMC4AAAAJ&hl=en) (Medical Imaging)
-    - [Tri Dao](https://stanford.edu/~trid/) (Augmentation)
-    - [Khaled Saab](https://web.stanford.edu/~ksaab/) (Observational Supervision)
-    - [Sen Wu](https://stanford.edu/~senwu/) (Augmentation)
-    - [Piero Molino](https://w4nderlu.st/about) (Editing)
-    - [Beidi Chen](https://www.cs.rice.edu/~bc20/) (Sparsity)
-- [Braden Hancock](https://www.bradenhancock.com) from [Snorkel.ai](https://snorkel.ai) contributed to weak supervision
-- [Jared Dunnmon](https://jdunnmon.github.io) from the Defense Innovation Unit edited multiple sections
-- Alvin Ming and [Sharon Li](http://pages.cs.wisc.edu/~sharonli/) from U-Wisconsin contributed work in outlier detection
-- [Ce Zhang](https://scholar.google.ch/citations?user=GkXqbmMAAAAJ&hl=en) and [Cedric Renggli](https://people.inf.ethz.ch/rengglic/) from ETH-Zurich added discussion for data cleaning and MLOps
-- [Eugene Wu](http://www.cs.columbia.edu/~ewu/) from Columbia added discussion for data cleaning
