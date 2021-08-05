@@ -32,7 +32,7 @@ If you'd like to make contributions to this Github repository, please read our [
 
 
 # Table of Contents
-
+0. [Background](#background)
 1. [Data Programming & Weak Supervision](#data-programming)
 2. [Data Augmentation](#augmentation)
 3. [Self-Supervision](#self-supervision)
@@ -49,6 +49,15 @@ If you'd like to make contributions to this Github repository, please read our [
 14. [Applications](#applications)
 15. [Awesome Lists](awesome-lists/README.md)
 
+<h1 id="background">Background</h1>
+
+[Background](background.md)
+
+There's a lot of excitement around understanding how to put machine learning to work on real use-cases. 
+Data-Centric AI embodies a particular point of view around how this progress can happen: by focusing on making it easier for 
+practitioners to understand, program and iterate on datasets, instead of spending time on models. 
+
+
 <h1 id="data-programming">Data Programming & Weak Supervision</h1>
 
 [Data Programming & Weak Supervision Area Page](data-programming.md)
@@ -60,7 +69,7 @@ However, these were largely regarded by AI and AI/ML folks as ad hoc or isolated
 Data programming builds on a long line of work on parameter estimation in latent variable graphical models. Concretely, a generative model for the joint distribution of labeling functions and the unobserved (latent) true label is learned. This label model permits aggregation of diverse sources of signal, while allowing them to have varying accuracies and potential correlations.
 
 An overview of the weak supervision landscape can be found in this [Snorkel blog post](https://www.snorkel.org/blog/weak-supervision), including how it compares to other approaches to get more labeled data and the technical modeling challenges. 
-These [Stanford CS229 lecture notes](https://mayeechen.github.io/files/wslecturenotes.pdf) provide a theoretical summary of how graphical models are used in weak supervision.
+These [Stanford CS229 lecture notes](https://mayeechen.github.io/files/wslecturenotes.pdf) provide a theoretical summary of how graphical models are used in weak supervision. 
 
 <h1 id="augmentation">Data Augmentation</h1>
 
@@ -79,6 +88,8 @@ The choice of transformations used in augmentation is an important consideration
 [Self-Supervision Area Page](self-supervision.md)
 
 The need for large, labeled datasets has motivated methods to pre-train latent representations of the input space using unlabeled data and use the resulting knowledge-rich representations in downstream tasks. As the representations allow for knowledge transfer to downstream tasks, these tasks require less labeled data. For example, language models can be pre-trained to predict the next token in a textual input to learn representations of words or sub-tokens. These word representations are then used in downstream models such as sentiment classification. This paradigm, called "self-supervision", has revolutionized how we train (and pre-train) models. Importantly, these self-supervised pre-trained models learn without manual labels or hand curated features. This reduces the engineer effort to create and maintain features and makes models significantly easier to deploy and maintain. This shift has allowed for more data to be fed to the model and shifted the focus to understanding what data to use.
+
+As self-supervised data is often curated from large, public data sources (e.g., Wikipedia), it can contain popularity bias where the long tail of rare things are not well represented in the training data. As [Orr et. al.](https://arxiv.org/pdf/2010.10363.pdf) show, some popular models (e.g., BERT) rely on context memorization and struggle to resolve this long tail as they are incapable of seeing a rare thing enough times to memorize the diverse set of patterns associated with it. The long tail problem even propagates to downstream tasks, like retrieval tasks from [AmbER](https://arxiv.org/pdf/2106.06830.pdf). One exciting future direction that lies at the intersection of AI and years of research from the data management community to address the long tail is through the integration of structured knowledge into the model. Structured knowledge is the core idea behind the tail success of [Bootleg](https://arxiv.org/pdf/2010.10363.pdf), a system for Named Entity Disambiguation.
 
 <h1 id="end_modelitis">The End of Modelitis</h1>
 
@@ -150,7 +161,7 @@ _This area is a stub, you can help by improving it._
 
 <h1 id="dataflow">Data Flow  (Under Construction)</h1>
 
-[Data Flow Area Page](data-flow.md)
+[Data Flow Area Page](dataflow.md)
 
 _This area is a stub, you can help by improving it._
 
